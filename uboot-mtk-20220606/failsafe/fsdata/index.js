@@ -98,14 +98,14 @@ function upload(name) {
                 const info = resp.split(' ');
 
                 document.getElementById('size').style.display = 'block';
-                document.getElementById('size').innerHTML = 'Size: ' + info[0];
+                document.getElementById('size').innerHTML = '镜像大小: ' + info[0];
 
                 document.getElementById('md5').style.display = 'block';
                 document.getElementById('md5').innerHTML = 'MD5: ' + info[1];
 
                 if (info[2]) {
                     document.getElementById('mtd').style.display = 'block';
-                    document.getElementById('mtd').innerHTML = 'MTD layout: ' + info[2];
+                    document.getElementById('mtd').innerHTML = 'MTD 布局: ' + info[2];
                 }
 
                 document.getElementById('upgrade').style.display = 'block';
